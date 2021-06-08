@@ -1,0 +1,29 @@
+.nav {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: transparent;
+  z-index: 1;
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: var(--max-width);
+}
+/* #! Navbar */
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* hidden nav-links */
+.nav-links {
+  display: none;
+}
+
+.sign-btn {
+  display: none;
+}

@@ -1,0 +1,83 @@
+/* aside */
+.sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  transform: scale(0);
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  z-index: -1;
+}
+
+.sidebar-wrapper.show {
+  visibility: visible;
+  z-index: 2;
+  transform: scale(1.025);
+}
+
+/* mengatus sidebar */
+.sidebar {
+  width: 90vw;
+  height: 95vh;
+  max-width: var(--fixed-width);
+  background: var(--dark-3);
+  border-radius: var(--radius);
+  box-shadow: var(--dark-shadow);
+  position: relative;
+  /* tambah padding for content */
+  padding: 4rem 2rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: transparent;
+  font-size: 2rem;
+  color: var(--red-1);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: var(--red-7);
+}
+
+.sidebar article {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* sidebar-sublinks */
+.sidebar-sublinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 4rem;
+}
+
+.sidebar-sublinks a {
+  display: block;
+  color: #fff;
+  text-transform: capitalize;
+  /* agar sejajar dengan icon dan text */
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  transition: var(--transition);
+}
+
+.sidebar-sublinks a:hover {
+  background: var(--grape-4);
+}
+
+.sidebar-sublinks svg {
+  color: var(--grape-1);
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
