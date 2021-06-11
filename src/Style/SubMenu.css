@@ -1,0 +1,73 @@
+.submenu {
+  background: rgba(0, 0, 0, 0.383);
+  box-shadow: var(--light-shadow);
+  position: absolute;
+  color: #fff;
+  padding: 2rem;
+  border-radius: var(--radius);
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 3;
+  top: 4rem;
+  transition: var(--transition);
+  margin-top: 1rem;
+}
+
+.submenu::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.383) transparent;
+  border-style: solid;
+  top: -1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.submenu.show {
+  display: block;
+}
+
+.submenu-center {
+  display: grid;
+  gap: 1rem;
+}
+
+.cols-2 {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 5rem;
+}
+
+.cols-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 5rem;
+}
+
+.cols-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 0.7rem;
+  font-size: 0.875rem;
+}
+
+.submenu-center a {
+  display: flex;
+  align-items: center;
+  color: var(--whiteColor);
+  text-transform: capitalize;
+}
+
+.submenu-center svg {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(0, 0, 0, 0.383);
+  color: var(--whiteColor);
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}

@@ -1,28 +1,60 @@
-import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
+import {
+  RiBuilding4Fill,
+  RiBuildingFill,
+  RiBuilding2Fill,
+} from 'react-icons/ri';
 import React from 'react';
 const sublinks = [
   {
-    page: 'products',
+    page: 'company build',
     links: [
-      { label: 'payment', icon: <FaCreditCard />, url: '/products' },
-      { label: 'terminal', icon: <FaCreditCard />, url: '/products' },
-      { label: 'connect', icon: <FaCreditCard />, url: '/products' },
+      {
+        label: 'startup',
+        icon: <RiBuilding4Fill />,
+        url: '/cloudy-gusts',
+      },
+      {
+        label: 'tekstil',
+        icon: <RiBuilding4Fill />,
+        url: '/cloudy-gusts',
+      },
+      {
+        label: 'university',
+        icon: <RiBuilding4Fill />,
+        url: '/cloudy-gusts',
+      },
     ],
   },
   {
-    page: 'developers',
+    page: 'apartement build',
     links: [
-      { label: 'plugins', icon: <FaBook />, url: '/products' },
-      { label: 'libraries', icon: <FaBook />, url: '/products' },
-      { label: 'help', icon: <FaBook />, url: '/products' },
-      { label: 'billing', icon: <FaBook />, url: '/products' },
+      {
+        label: 'apartement',
+        icon: <RiBuildingFill />,
+        url: '/apartement',
+      },
+      {
+        label: 'apartement',
+        icon: <RiBuildingFill />,
+        url: '/cloudy-high',
+      },
+      {
+        label: 'apartement',
+        icon: <RiBuildingFill />,
+        url: '/cloudy-high',
+      },
+      {
+        label: 'apartement',
+        icon: <RiBuildingFill />,
+        url: '/cloudy-high',
+      },
     ],
   },
   {
-    page: 'company',
+    page: 'infrastruktur',
     links: [
-      { label: 'about', icon: <FaBriefcase />, url: '/products' },
-      { label: 'customers', icon: <FaBriefcase />, url: '/products' },
+      { label: 'infrastruktur', icon: <RiBuilding2Fill />, url: '/Rain-Mix' },
+      { label: 'infrastruktur', icon: <RiBuilding2Fill />, url: '/Rain-Mix' },
     ],
   },
 ];
